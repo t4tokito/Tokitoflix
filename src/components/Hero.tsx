@@ -31,7 +31,8 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#download"
+            href="/download/Tokitoflix.apk"
+            download
             className="flex items-center gap-2.5 bg-[#4F3B78] hover:bg-[#927FBF] text-[#F0EEFF] px-8 py-4 rounded-full font-semibold text-base transition-all hover:shadow-lg hover:shadow-[#4F3B78]/25"
           >
             <Download className="w-5 h-5" />

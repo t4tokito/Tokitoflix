@@ -25,14 +25,15 @@ export default function DownloadSection() {
             turning YouTube videos into notes, quizzes, and flashcards today.
           </p>
           <a
-            href="#"
+            href="/download/Tokitoflix.apk"
+            download
             className="inline-flex items-center gap-2.5 bg-[#4F3B78] hover:bg-[#927FBF] text-[#F0EEFF] px-10 py-4 rounded-full font-semibold text-lg transition-all hover:shadow-lg hover:shadow-[#4F3B78]/25"
           >
             <Download className="w-5 h-5" />
             Download APK
           </a>
           <p className="text-[#927FBF]/60 text-sm mt-5">
-            v1.0.0 &bull; Android 7.0+ &bull; Free
+            v1.0.0 &bull; Android 7.0+ &bull; Free &bull; 86 MB
           </p>
         </div>
       </div>

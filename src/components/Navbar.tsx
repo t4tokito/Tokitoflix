@@ -40,7 +40,8 @@ export default function Navbar() {
             How It Works
           </a>
           <a
-            href="#download"
+            href="/download/Tokitoflix.apk"
+            download
             className="text-sm bg-[#4F3B78] hover:bg-[#927FBF] text-[#F0EEFF] px-5 py-2.5 rounded-full font-medium transition-colors"
           >
             Download APK
@@ -72,7 +73,8 @@ export default function Navbar() {
             How It Works
           </a>
           <a
-            href="#download"
+            href="/download/Tokitoflix.apk"
+            download
             className="block text-sm bg-[#4F3B78] hover:bg-[#927FBF] text-[#F0EEFF] px-5 py-2.5 rounded-full font-medium text-center"
             onClick={() => setMenuOpen(false)}
           >
