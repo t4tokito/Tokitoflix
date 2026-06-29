@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://tokitoflix.netlify.app";
+const SITE_URL = "https://tokitoflix.vercel.app";
 const SITE_NAME = "Tokitoflix";
 
 export const metadata: Metadata = {
