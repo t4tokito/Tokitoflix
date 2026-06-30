@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     default: "Tokitoflix — Free AI YouTube Notes Maker | Turn Videos into Notes, Quizzes & Flashcards",
     template: "%s | Tokitoflix",
   },
+  applicationName: "Tokitoflix",
   description:
     "Paste any YouTube link and get structured notes, quizzes, and flashcards instantly with AI. Free, no signup required. Download Tokitoflix app now.",
   keywords: [
@@ -91,30 +92,39 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    name: "Tokitoflix",
-    url: SITE_URL,
-    description:
-      "Free AI-powered tool to convert YouTube videos into structured notes, quizzes, and flashcards.",
-    applicationCategory: "EducationalApplication",
-    operatingSystem: "Web, Android",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Tokitoflix",
+      url: SITE_URL,
+      logo: `${SITE_URL}/logo.jfif`,
     },
-    featureList: [
-      "YouTube Video to Notes",
-      "AI Quiz Generation",
-      "Flashcard Creation",
-      "PDF Export",
-      "AI Summarization",
-      "Group Study",
-    ],
-    screenshot: `${SITE_URL}/screenshot.png`,
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      name: "Tokitoflix",
+      url: SITE_URL,
+      description:
+        "Free AI-powered tool to convert YouTube videos into structured notes, quizzes, and flashcards.",
+      applicationCategory: "EducationalApplication",
+      operatingSystem: "Web, Android",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+      },
+      featureList: [
+        "YouTube Video to Notes",
+        "AI Quiz Generation",
+        "Flashcard Creation",
+        "PDF Export",
+        "AI Summarization",
+        "Group Study",
+      ],
+      screenshot: `${SITE_URL}/screenshot.png`,
+    },
+  ];
 
   return (
     <html
