@@ -13,7 +13,7 @@ export default function Navbar() {
         <a href="#" className="flex items-center gap-2.5 group">
           <div className="w-9 h-9 rounded-xl overflow-hidden">
             <Image
-              src="/logo.jpeg"
+              src="/logo.jfif"
               alt="Tokitoflix Logo"
               width={36}
               height={36}

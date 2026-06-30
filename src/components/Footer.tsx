@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-lg overflow-hidden">
               <Image
-                src="/logo.jpeg"
+                src="/logo.jfif"
                 alt="Tokitoflix Logo"
                 width={32}
                 height={32}

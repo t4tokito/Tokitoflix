@@ -10,7 +10,7 @@ export default function DownloadSection() {
         <div className="p-10 sm:p-14 rounded-3xl bg-gradient-to-b from-[#4F3B78]/15 to-transparent border border-[#4F3B78]/30">
           <div className="w-16 h-16 rounded-2xl overflow-hidden mx-auto mb-6">
             <Image
-              src="/logo.jpeg"
+              src="/logo.jfif"
               alt="Tokitoflix Logo"
               width={64}
               height={64}
