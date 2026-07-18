@@ -6,9 +6,8 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/admin/"],
       },
     ],
-    sitemap: "https://tokitoflix.netlify.app/sitemap.xml",
+    sitemap: "https://tokitotv.netlify.app/sitemap.xml",
   };
 }

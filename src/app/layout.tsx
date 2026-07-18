@@ -1,48 +1,31 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const SITE_URL = "https://tokitoflix.netlify.app";
-const SITE_NAME = "Tokitoflix";
+const SITE_URL = "https://tokitotv.netlify.app";
+const SITE_NAME = "TokitoTV";
 
 export const metadata: Metadata = {
   title: {
-    default: "Tokitoflix — Free AI YouTube Notes Maker | Turn Videos into Notes, Quizzes & Flashcards",
-    template: "%s | Tokitoflix",
+    default: "TokitoTV - Watch Anime Without Ads | Free Anime Streaming App",
+    template: "%s | TokitoTV",
   },
-  applicationName: "Tokitoflix",
   description:
-    "Paste any YouTube link and get structured notes, quizzes, and flashcards instantly with AI. Free, no signup required. Download Tokitoflix app now.",
+    "TokitoTV is a free anime streaming app with no ads. Watch Sub & Dub anime with a huge library, multiple servers, and clean dark UI. Download APK now.",
   keywords: [
-    "youtube notes",
-    "youtube to notes",
-    "video notes maker",
-    "youtube summary",
-    "ai notes",
-    "youtube transcript notes",
-    "free youtube notes",
-    "youtube video notes",
-    "ai note taker",
-    "youtube quiz maker",
-    "youtube flashcards",
-    "video to notes ai",
-    "youtube notes app",
-    "study notes from youtube",
-    "youtube lecture notes",
+    "tokitotv",
+    "anime streaming",
+    "free anime",
+    "no ads anime",
+    "anime app",
+    "watch anime",
+    "sub dub anime",
+    "anime download",
+    "anime apk",
+    "anime free app",
   ],
-  authors: [{ name: "Tokitoflix" }],
-  creator: "Tokitoflix",
-  publisher: "Tokitoflix",
+  authors: [{ name: "TokitoTV" }],
+  creator: "TokitoTV",
+  publisher: "TokitoTV",
   metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: "/",
@@ -52,23 +35,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: "Tokitoflix — Free AI YouTube Notes Maker",
+    title: "TokitoTV - Watch Anime Without Ads",
     description:
-      "Turn any YouTube video into structured notes, quizzes, and flashcards with AI. Free, no signup required.",
+      "Free anime streaming app with no ads. Sub & Dub support, huge library, clean dark UI.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Tokitoflix — YouTube to Notes AI App",
+        alt: "TokitoTV - Free Anime Streaming App",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tokitoflix — Free AI YouTube Notes Maker",
+    title: "TokitoTV - Watch Anime Without Ads",
     description:
-      "Turn any YouTube video into structured notes, quizzes, and flashcards with AI. Free, no signup required.",
+      "Free anime streaming app with no ads. Sub & Dub support, huge library, clean dark UI.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -82,9 +65,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "L05X7kZkMKNvSkyvkzRH7NEf48FuKMYCgEKRD8patco",
-  },
 };
 
 export default function RootLayout({
@@ -92,61 +72,40 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const jsonLd = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Tokitoflix",
-      url: SITE_URL,
-      logo: `${SITE_URL}/logo.jfif`,
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    name: "TokitoTV",
+    operatingSystem: "Android",
+    applicationCategory: "MultimediaApplication",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      name: "Tokitoflix",
-      url: SITE_URL,
-      description:
-        "Free AI-powered tool to convert YouTube videos into structured notes, quizzes, and flashcards.",
-      applicationCategory: "EducationalApplication",
-      operatingSystem: "Web, Android",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-      },
-      featureList: [
-        "YouTube Video to Notes",
-        "AI Quiz Generation",
-        "Flashcard Creation",
-        "PDF Export",
-        "AI Summarization",
-        "Group Study",
-      ],
-      screenshot: `${SITE_URL}/screenshot.png`,
-    },
-  ];
+    description:
+      "Free anime streaming app with no ads. Watch Sub & Dub anime with a huge library and clean dark UI.",
+    screenshot: `${SITE_URL}/og-image.png`,
+  };
 
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+    <html lang="en" className="h-full antialiased">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
-        <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png" />
-        <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#1E2030" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#A35C7A" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-[#1E2030] text-[#F0EEFF]">
+      <body className="min-h-full flex flex-col bg-black text-[#EFECE3]">
         {children}
       </body>
     </html>

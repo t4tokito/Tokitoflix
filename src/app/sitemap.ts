@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://tokitoflix.netlify.app";
+  const baseUrl = "https://tokitotv.netlify.app";
 
   return [
     {
