@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/:path*",
-      "destination": "https://tokitotv.netlify.app/:path*",
+      "destination": "https://tokitoflix.netlify.app/:path*",
       "permanent": true
     }
   ]
