@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://tokitotv.netlify.app/sitemap.xml",
+    sitemap: "https://tokitotv.vercel.app/sitemap.xml",
   };
 }
