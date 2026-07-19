@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const SITE_URL = "https://tokitotv.netlify.app";
+const SITE_URL = "https://tokitoflix.netlify.app";
 const SITE_NAME = "TokitoTV";
 
 export const metadata: Metadata = {
